@@ -28,8 +28,8 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden; /* Para tudo que sair da div (border-radius)*/
+    transform: translate(-50%, -50%);
 
 
     background-color: white;
@@ -62,6 +62,8 @@ div#formulario h1 {
 
 div#formulario p {
     font-size: 0.8em;
+    margin: 20px 0px;
+    
 }
 
 form > input[type=submit] {
@@ -103,15 +105,38 @@ form > a.botao:hover {
     background-color: #6cd3cf;
 }
 
+div.campo > span {
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input {
+    background-color: #54b8b4;
+    font-size: 1em;
+    height: 100%;
+    border-radius: 8px;
+    border: 0px;
+    padding: 4px;
+    width: calc(100% - 44.5px);
+    transform: translateY(-13px);
+}
+
 .campo {
     background-color: #5f2c82;
     width: 100%;
     display: block;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0px;
+    border: 2px solid #5f2c82;
 }
 
 div.campo > label {
     display: none;
+}
+
+.campo > input:focus-within {
+    background-color: aliceblue;
 }

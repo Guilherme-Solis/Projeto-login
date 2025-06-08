@@ -11,12 +11,13 @@
 */
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
-    body {
+    body { /* Para TABLETS */
         background-image: linear-gradient(to top, #49a09d, #5f2c82);
     }
 
     section#login {
         width: 80vh;
+        height: 300px;
     }
 
     section#login > div#imagem {
@@ -31,10 +32,11 @@
     }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 992px) { /* Para PC's */
 
     section#login {
         width: 950px;
+        height: 400px;
     }
 
     section#login > div#imagem{
@@ -47,4 +49,6 @@
         float: left;
         width: 50%;
     }
+
+
 }
